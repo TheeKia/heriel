@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "dev": "bun --bun run --parallel --workspaces dev",
-    "build": "bun --bun --elide-lines=0 run --filter @heriel/app build",
+    "build": "bun --bun --elide-lines=0 run --filter @heriel/web build",
     "start": "bun --bun run --parallel --workspaces start",
     "check": "biome check .",
     "fix": "biome check --fix ."

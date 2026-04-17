@@ -1,0 +1,16 @@
+{
+  "name": "@heriel/shared",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./env": "./src/utils/env.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3",
+    "zod": "^4.3.6"
+  }
+}
