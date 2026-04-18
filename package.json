@@ -6,9 +6,10 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "bun --bun run --parallel --workspaces dev",
-    "build": "bun --bun --elide-lines=0 run --filter @heriel/app build",
-    "start": "bun --bun run --parallel --workspaces start",
+    "dev": "bun --bun run --filter @heriel/app --filter @heriel/api dev",
+    "dev:web": "bun --bun run --filter @heriel/web dev",
+    "build:app": "bun --bun --elide-lines=0 run --filter @heriel/app build",
+    "start": "bun --bun run --filter  @heriel/api start",
     "check": "biome check .",
     "fix": "biome check --fix ."
   },
