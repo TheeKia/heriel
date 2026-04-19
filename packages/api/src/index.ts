@@ -2,10 +2,18 @@ import './env'
 
 import { Hono } from 'hono'
 import { serveStatic } from 'hono/bun'
+import { cors } from 'hono/cors'
 
 const app = new Hono()
 
 const api = app.basePath('/api')
+
+app.use(
+  '/*',
+  cors({
+    origin: '*',
+  }),
+)
 
 api.get('/health', (c) => c.json({ ok: true }))
 

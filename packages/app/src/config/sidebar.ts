@@ -15,8 +15,8 @@ type SidebarItem = {
 
 export const SIDEBAR: SidebarItem[] = [
   {
-    label: 'Chats',
-    href: '/chats',
+    label: 'Chat',
+    href: '/chat',
     icon: MessageSquareCodeIcon,
   },
   {

@@ -8,6 +8,7 @@
   "files": {
     "includes": [
       "packages/api/src/**/*.{ts,tsx}",
+      "packages/app/src/**/*.{ts,tsx}",
       "packages/shared/src/**/*.{ts,tsx}",
       "packages/web/src/**/*.{ts,tsx}"
     ],

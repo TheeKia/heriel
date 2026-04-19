@@ -1,5 +1,5 @@
-import './index.css'
-import './addons.css'
+import './styles/index.css'
+import './styles/addons.css'
 
 import { QueryClientProvider } from '@tanstack/react-query'
 import { StrictMode } from 'react'
