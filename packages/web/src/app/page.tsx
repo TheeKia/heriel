@@ -4,7 +4,7 @@ import { type AnimateItem, Dotimation } from 'dotimation'
 import { useEffect, useState } from 'react'
 import { Textimation } from 'textimation'
 
-const ITEM: AnimateItem = { type: 'image', data: '/heriel.svg' }
+const ITEM: AnimateItem = { type: 'image', data: '/heriel-light.svg' }
 const CYCLE_MESSAGE = ['H e r i e l', 'Coming Soon']
 
 export default function Home() {
