@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main className="relative flex min-h-dvh flex-col items-center justify-center gap-4 overflow-hidden">
-      <Dotimation item={ITEM} width={128} height={128} pointSpacingCss={1} />
+      <Dotimation item={ITEM} width={128} height={128} dots={{ size: "hairline" }} />
 
       <Textimation
         text={CYCLE_MESSAGE[messageIdx]}
