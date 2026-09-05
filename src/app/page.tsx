@@ -1,25 +1,31 @@
-'use client'
+"use client";
 
-import { type AnimateItem, Dotimation } from 'dotimation'
-import { useEffect, useState } from 'react'
-import { Textimation } from 'textimation'
+import { type AnimateItem, Dotimation } from "dotimation";
+import { useEffect, useState } from "react";
+import { Textimation } from "textimation";
 
-const ITEM: AnimateItem = { type: 'image', data: '/heriel-light.svg' }
-const CYCLE_MESSAGE = ['H e r i e l', 'Coming Soon']
+const ITEM: AnimateItem = { type: "image", data: "/heriel-light.svg" };
+const CYCLE_MESSAGE = ["H e r i e l", "Coming Soon"];
 
 export default function Home() {
-  const [messageIdx, setMessageIdx] = useState(0)
+  const [messageIdx, setMessageIdx] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setMessageIdx((prev) => (prev + 1) % CYCLE_MESSAGE.length)
-    }, 2500)
-    return () => clearInterval(interval)
-  }, [])
+      setMessageIdx((prev) => (prev + 1) % CYCLE_MESSAGE.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <main className="relative flex min-h-dvh flex-col items-center justify-center gap-4 overflow-hidden">
-      <Dotimation item={ITEM} width={128} height={128} dots={{ size: "hairline", spacing: 0 }} motion={{ jitter: 0.5 }} />
+      <Dotimation
+        item={ITEM}
+        width={128}
+        height={128}
+        dots={{ size: "hairline", spacing: 0 }}
+        motion={{ jitter: 0.5 }}
+      />
 
       <Textimation
         text={CYCLE_MESSAGE[messageIdx]}
@@ -30,5 +36,5 @@ export default function Home() {
         keepCorrectChars
       />
     </main>
-  )
+  );
 }
